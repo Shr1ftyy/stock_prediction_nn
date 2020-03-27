@@ -39,7 +39,6 @@ for Data or select your own csv file?
 Insert reference number to continue: '''))
 
 show_option()
-print("www")
 
 if option == 1:
 	online = True
