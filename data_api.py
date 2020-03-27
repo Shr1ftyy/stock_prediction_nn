@@ -16,6 +16,7 @@ from matplotlib.pyplot import figure
 #       
 #       @author Syeam_Bin_Abdullah
 ###############################################
+
 online = True
 
 try:
@@ -49,12 +50,6 @@ elif option == 0:
 else:
 	print('You did not select the displayed options, please try again')
 	show_option()
-
-# stat.rename(index= pd.to_datetime,
-#             columns = lambda x : x.split(' ')[-1],
-#             inplace = True) 
-
-
 
 if online:
 	try:
@@ -121,13 +116,3 @@ def visualize():
 	plt.show()
 
  
- 
-# visualize()
-
-# fig = go.Figure(data=[go.Candlestick(x=stat.index,
-#                 open=stat['1. open'],
-#                 high=stat['2. high'],
-#                 low=stat['3. low'],
-#                 close=stat['4. close'])])
-
-# fig.show()
