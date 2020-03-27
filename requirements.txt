@@ -1,0 +1,5 @@
+tensorflow
+numpy
+alpha-vantage
+matplotlib
+keras
