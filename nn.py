@@ -43,7 +43,7 @@ VERSION = 4
 NAME = f'stock_model_v{VERSION}_{data.selection}_{time.time()}.h5'
 
 #state variables    
-window = 20
+window = 60
 row = 1
 length = len(data.stat)-1
 PREDICT_SIZE = 100
@@ -156,8 +156,6 @@ for i in range (window, int(PREDICT_SIZE+window)):
 
 x_test, y_test = np.array(x_test), np.array(y_test)
 x_test = np.reshape(x_test, (x_test.shape[0], x_test.shape[1],1))
-
-
 
 predicted_stock_price = model.predict(x_test) 
 predicted_stock_price = sc.inverse_transform(predicted_stock_price)
