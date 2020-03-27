@@ -1,4 +1,4 @@
-#A simple recurrent neural network used for stock prediction
+# A simple recurrent neural network used for stock prediction
 
 - Currently used regression to predict next stock close price _(literally just relies on a window of
 last close prices of a stock)_
